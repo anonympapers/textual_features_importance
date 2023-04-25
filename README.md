@@ -144,6 +144,8 @@ MTLD measures the average length of continuous text sequence that maintains the 
 See work of [@essay] for more details.
 
 Taking into account:
+
+$a=b+c$
 $ numLexicals = numAdj + numNouns + numVerbs + numAdverbs + numProperNouns$
 $ numVerbsOnly = numVerbs$
 
