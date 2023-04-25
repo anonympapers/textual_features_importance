@@ -1,9 +1,4 @@
 
-title: "Shapley Value Based Public Speaking Training System"
-author: "anonym"
-date: '2023'
-bibliography: bibliography.bib
-
 # SPSTS
 
 Thank you for visiting our "Shapley Value Based Public Speaking Training System" repository. Here you can find features extractors, models, and results. This repository is anonymous thus we do not provide initial data we were working with. In the case of any questions and usage of our code we kindly ask you to contact us via e-mail address: anonym.papers@gmail.com
@@ -184,7 +179,7 @@ $POS_correctedVV1=\dfrac{numVerbsOnly}{\sqrt{2.0\times len(uniqueVerbs)}}$
     
     
 ### Reference Features
-See work of [@essay] for more details.
+See work of \cite{essay} for more details.
 
 $numPronouns=numPersonalPronouns+numPossessivePronouns$\
 $DISC_RefExprPronounsPerNoun=\dfrac{numPronouns}{numNouns}$ \
@@ -226,7 +221,7 @@ averageSynClassVERB average number of used synonyms within synonym classes for v
 
 ### Filler Features
 
-See work of [@fillers] for more details.
+See work of \cite{fillers} for more details.
 
 
 f_uh number of fillers "uhh"
