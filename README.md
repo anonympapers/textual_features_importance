@@ -134,6 +134,22 @@ In this section we will provide details on how textual features were extracted. 
 
 See work of [@essay] for more details.
 
+
+@article{essay,
+  author    = {Sowmya Vajjala},
+  title     = {Automated assessment of non-native learner essays: Investigating the
+               role of linguistic features},
+  journal   = {CoRR},
+  volume    = {abs/1612.00729},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1612.00729},
+  eprinttype = {arXiv},
+  eprint    = {1612.00729},
+  timestamp = {Mon, 13 Aug 2018 16:48:09 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/Vajjala16.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
 $TTR = \dfrac{nb\_types}{nb\_tokens}$ \
 $CorrectedTTR = \dfrac{nb\_types}{\sqrt{2*nb\_tokens}}$\
 $RootTTR = \dfrac{nb\_types}{\sqrt{nb\_tokens}}$\
