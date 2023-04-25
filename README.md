@@ -136,7 +136,7 @@ See work of [@essay] for more details.
 $TTR = \dfrac{nb\_types}{nb\_tokens}$
 $CorrectedTTR = \dfrac{nb\_types}{\sqrt{2*nb\_tokens}}$
 $RootTTR = \dfrac{nb\_types}{\sqrt{nb\_tokens}}$
-$BilogTTR = \dfrac{log(nb\_types)}{log(nb\_tokens)}
+$BilogTTR = \dfrac{log(nb\_types)}{log(nb\_tokens)}$
 MTLD measures the average length of continuous text sequence that maintains the TTR above a threshold of $0.72$
   
 ### Density Features 
