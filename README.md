@@ -172,8 +172,8 @@ $POS_modVar=\dfrac{numAdj+numAdverbs}{numLexicals}$ \
 $POS_nounVar=\dfrac{numNouns+numProperNouns}{numLexicals}$ \
 $POS_verbVar1=\dfrac{numVerbsOnly}{len(uniqueVerbs)}$ \
 $POS_verbVar2=\dfrac{numVerbsOnly}{numLexicals}$ \
-$POS_squaredVerbVar1=\dfrac{numVerbsOnly\timesnumVerbsOnly}{len(uniqueVerbs)}$\
-$POS_correctedVV1=\dfrac{numVerbsOnly}{\sqrt{2.0\timeslen(uniqueVerbs)}}$ \
+$POS_squaredVerbVar1=\dfrac{numVerbsOnly\times numVerbsOnly}{len(uniqueVerbs)}$\
+$POS_correctedVV1=\dfrac{numVerbsOnly}{\sqrt{2.0\times len(uniqueVerbs)}}$ 
     
     
     
@@ -190,7 +190,7 @@ $DISC_RefExprPossProPerSen=\dfrac{numPossessivePronouns}{numSentences}$ \
 $DISC_RefExprPossProPerWord=\dfrac{numPossessivePronouns}{numWords}$ \
 $DISC_RefExprDefArtPerSen=\dfrac{numDefiniteArticles}{numSentences}$ \
 $DISC_RefExprDefArtPerWord=\dfrac{numDefiniteArticles}{numWords}$ \
-$DISC_RefExprProperNounsPerNoun=\dfrac{numProperNouns}{numNouns}$ \
+$DISC_RefExprProperNounsPerNoun=\dfrac{numProperNouns}{numNouns}$ 
 
 ### Overlap Features
 
@@ -208,7 +208,7 @@ Analogously _global_ features measures same quantities but for any two sentences
 $conjunctToSent=\dfrac{conjunctNum}{nbSent}$ \
 $conjunctTypesToSent=\dfrac{numTypesConjunt}{nbSent}$ \
 $conjunctToWords=\dfrac{conjunctNum}{docLen}$ \
-$conjunctNeighborSent=\dfrac{numSameConjunctForSubsequentSentences}{nbSent}$ \
+$conjunctNeighborSent=\dfrac{numSameConjunctForSubsequentSentences}{nbSent}$ 
 
 
 ### Synonym Rate Features
@@ -216,7 +216,7 @@ $conjunctNeighborSent=\dfrac{numSameConjunctForSubsequentSentences}{nbSent}$ \
 $synonymToNouns=\dfrac{nbOfGroupsOfNounSynonyms}{nbOfNouns}$ \
 averageSynClassNOUN average number of used synonyms within synonym classes for nouns \
 $synonymToVerbs=\dfrac{nbOfGroupsVerbSynonyms}{nbOfVerbs}$ \
-averageSynClassVERB average number of used synonyms within synonym classes for verbs \
+averageSynClassVERB average number of used synonyms within synonym classes for verbs 
 
 ### Filler Features
 
