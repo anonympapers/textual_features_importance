@@ -1,0 +1,3 @@
+median: 2.6666666666666665 separation: 1    559
+0    441
+Name: label, dtype: int64
