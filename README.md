@@ -136,7 +136,7 @@ See work of [@essay] for more details.
 $TTR = \dfrac{nb_types}{nb_tokens}$
 $CorrectedTTR = \dfrac{nb_types}{\sqrt{2*nb_tokens}}$
 $RootTTR = \dfrac{nb_types}{\sqrt{nb_tokens}}$
-$BilogTTR = \dfrac{\log(nb_types)}{\log(nb_tokens)}
+$BilogTTR = \dfrac{log(nb_types)}{log(nb_tokens)}
 MTLD measures the average length of continuous text sequence that maintains the TTR above a threshold of $0.72$
   
 ### Density Features 
@@ -149,7 +149,7 @@ $ numVerbsOnly = numVerbs$
 
 
 Density features are calculated as:
-$ POS_numNouns = \dfrac{numNouns + numProperNouns)}{TotalWords}$
+$ POS_numNouns = \dfrac{ numNouns + numProperNouns }{TotalWords}$
 $ POS_numProperNouns = \dfrac{numProperNouns}{TotalWords}$
 $ POS_numPronouns = \dfrac{numPronouns}{TotalWords}$  
 $ POS_numConjunct = \dfrac{numConjunct}{TotalWords}$
