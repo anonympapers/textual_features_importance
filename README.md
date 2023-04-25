@@ -11,7 +11,7 @@ This repository contains following:
 
 * __requirements.txt__
 
-* __feature_category.py__: produces file __catepories.json__ to be used on separation features to groups
+* __feature_category.py__: produces file __categories.json__ to be used for separation features on groups
 
 * __test_MT.py__ file: 
     * group features from different categories using __categories.json__
