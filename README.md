@@ -59,7 +59,7 @@ First install requirements via:
 pip install -r requirements.txt
 ```
 
-___NOTE: IT IS RECOMENDED TO JUST USE FILES WITH EXTRACTED FEATURES & LABELS OF CLASSES THUS OBE CAN SKIP FOLLOWING PART___
+___NOTE: IT IS RECOMENDED TO JUST USE FILES WITH EXTRACTED FEATURES & LABELS OF CLASSES THUS ONE CAN SKIP FOLLOWING PART___
 
 If you want to re-extract features you can go to repository __./preprocess/__ and execute code below. To do so make sure that you have directory __.data/name_of_dataset/transcripts/__ containing transcripts of public speech you want to analyse:
 
