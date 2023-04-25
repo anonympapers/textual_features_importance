@@ -172,25 +172,25 @@ $POS_modVar=\dfrac{numAdj+numAdverbs}{numLexicals}$ \
 $POS_nounVar=\dfrac{numNouns+numProperNouns}{numLexicals}$ \
 $POS_verbVar1=\dfrac{numVerbsOnly}{len(uniqueVerbs)}$ \
 $POS_verbVar2=\dfrac{numVerbsOnly}{numLexicals}$ \
-$POS_squaredVerbVar1=\dfrac{numVerbsOnly*numVerbsOnly}{len(uniqueVerbs)}$ \
-$POS_correctedVV1=\dfrac{numVerbsOnly}{\sqrt{2.0*len(uniqueVerbs)}}$ \
+$POS_squaredVerbVar1=\dfrac{numVerbsOnly\timesnumVerbsOnly}{len(uniqueVerbs)}$\
+$POS_correctedVV1=\dfrac{numVerbsOnly}{\sqrt{2.0\timeslen(uniqueVerbs)}}$ \
     
     
     
 ### Reference Features
 See work of [@essay] for more details.
 
-$numPronouns=numPersonalPronouns+numPossessivePronouns$
-$DISC_RefExprPronounsPerNoun=\dfrac{numPronouns}{numNouns}$ 
-$DISC_RefExprPronounsPerSen=\dfrac{numPronouns}{numSentences}$ 
-$DISC_RefExprPronounsPerWord=\dfrac{numPronouns}{numWords}$ 
-$DISC_RefExprPerPronounsPerSen=\dfrac{numPersonalPronouns}{numSentences}$ 
-$DISC_RefExprPerProPerWord=\dfrac{numPersonalPronouns}{numWords}$ 
-$DISC_RefExprPossProPerSen=\dfrac{numPossessivePronouns}{numSentences}$ 
-$DISC_RefExprPossProPerWord=\dfrac{numPossessivePronouns}{numWords}$ 
-$DISC_RefExprDefArtPerSen=\dfrac{numDefiniteArticles}{numSentences}$ 
-$DISC_RefExprDefArtPerWord=\dfrac{numDefiniteArticles}{numWords}$ 
-$DISC_RefExprProperNounsPerNoun=\dfrac{numProperNouns}{numNouns}$ 
+$numPronouns=numPersonalPronouns+numPossessivePronouns$\
+$DISC_RefExprPronounsPerNoun=\dfrac{numPronouns}{numNouns}$ \
+$DISC_RefExprPronounsPerSen=\dfrac{numPronouns}{numSentences}$ \
+$DISC_RefExprPronounsPerWord=\dfrac{numPronouns}{numWords}$ \
+$DISC_RefExprPerPronounsPerSen=\dfrac{numPersonalPronouns}{numSentences}$ \
+$DISC_RefExprPerProPerWord=\dfrac{numPersonalPronouns}{numWords}$ \
+$DISC_RefExprPossProPerSen=\dfrac{numPossessivePronouns}{numSentences}$ \
+$DISC_RefExprPossProPerWord=\dfrac{numPossessivePronouns}{numWords}$ \
+$DISC_RefExprDefArtPerSen=\dfrac{numDefiniteArticles}{numSentences}$ \
+$DISC_RefExprDefArtPerWord=\dfrac{numDefiniteArticles}{numWords}$ \
+$DISC_RefExprProperNounsPerNoun=\dfrac{numProperNouns}{numNouns}$ \
 
 ### Overlap Features
 
@@ -205,18 +205,18 @@ Analogously _global_ features measures same quantities but for any two sentences
 
 ### Linking Rate Features
 
-$conjunctToSent=\dfrac{conjunctNum}{nbSent}$ 
-$conjunctTypesToSent=\dfrac{numTypesConjunt}{nbSent}$ 
-$conjunctToWords=\dfrac{conjunctNum}{docLen}$ 
-$conjunctNeighborSent=\dfrac{numSameConjunctForSubsequentSentences}{nbSent}$ 
+$conjunctToSent=\dfrac{conjunctNum}{nbSent}$ \
+$conjunctTypesToSent=\dfrac{numTypesConjunt}{nbSent}$ \
+$conjunctToWords=\dfrac{conjunctNum}{docLen}$ \
+$conjunctNeighborSent=\dfrac{numSameConjunctForSubsequentSentences}{nbSent}$ \
 
 
 ### Synonym Rate Features
 
-$synonymToNouns=\dfrac{nbOfGroupsOfNounSynonyms}{nbOfNouns}$ 
-averageSynClassNOUN average number of used synonyms within synonym classes for nouns
-$synonymToVerbs=\dfrac{nbOfGroupsVerbSynonyms}{nbOfVerbs}$ 
-averageSynClassVERB average number of used synonyms within synonym classes for verbs
+$synonymToNouns=\dfrac{nbOfGroupsOfNounSynonyms}{nbOfNouns}$ \
+averageSynClassNOUN average number of used synonyms within synonym classes for nouns \
+$synonymToVerbs=\dfrac{nbOfGroupsVerbSynonyms}{nbOfVerbs}$ \
+averageSynClassVERB average number of used synonyms within synonym classes for verbs \
 
 ### Filler Features
 
