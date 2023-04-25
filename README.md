@@ -1,9 +1,8 @@
----
+
 title: "Shapley Value Based Public Speaking Training System"
 author: "anonym"
 date: '2023'
 bibliography: bibliography.bib
----
 
 # SPSTS
 
