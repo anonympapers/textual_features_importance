@@ -133,10 +133,10 @@ In this section we will provide details on how textual features were extracted. 
 
 See work of [@essay] for more details.
 
-$TTR = \dfrac{nb\_types}{nb\_tokens}$
-$CorrectedTTR = \dfrac{nb\_types}{\sqrt{2*nb\_tokens}}$
-$RootTTR = \dfrac{nb\_types}{\sqrt{nb\_tokens}}$
-$BilogTTR = \dfrac{log(nb\_types)}{log(nb\_tokens)}$
+$TTR = \dfrac{nb\_types}{nb\_tokens}$ \
+$CorrectedTTR = \dfrac{nb\_types}{\sqrt{2*nb\_tokens}}$\
+$RootTTR = \dfrac{nb\_types}{\sqrt{nb\_tokens}}$\
+$BilogTTR = \dfrac{log(nb\_types)}{log(nb\_tokens)}\
 MTLD measures the average length of continuous text sequence that maintains the TTR above a threshold of $0.72$
   
 ### Density Features 
@@ -151,29 +151,29 @@ $numVerbsOnly=numVerbs$
 
 
 Density features are calculated as:
-$POS_numNouns=\dfrac{numNouns+numProperNouns}{TotalWords}$
-$POS_numProperNouns=\dfrac{numProperNouns}{TotalWords}$
-$POS_numPronouns=\dfrac{numPronouns}{TotalWords}$  
-$POS_numConjunct=\dfrac{numConjunct}{TotalWords}$
-$POS_numAdjectives=\dfrac{numAdj}{TotalWords}$ 
-$POS_numVerbs=\dfrac{numVerbs}{TotalWords}$ 
-$POS_numAdverbs=\dfrac{numAdverbs}{TotalWords}$ 
-$POS_numPrepositions=\dfrac{numPrepositions}{TotalWords}$ 
-$POS_numInterjections=\dfrac{numInterjections}{TotalWords}$ 
-$POS_numPerPronouns=\dfrac{perpronouns}{TotalWords}$ 
-$POS_numLexicals=\dfrac{numLexicals}{TotalWords}$ 
-$POS_numFunctionWords=\dfrac{numFunctionWords}{TotalWords}$ 
-$POS_numDeterminers=\dfrac{numDeterminers}{TotalWords}$ 
-$POS_numVerbsVB=\dfrac{numVB}{TotalWords}$ 
-$POS_numVerbsVBN=\dfrac{numVBN}{TotalWords}$ 
-$POS_advVar=\dfrac{numAdverbs}{numLexicals}$ 
-$POS_adjVar=\dfrac{numAdj}{numLexicals}$ 
-$POS_modVar=\dfrac{numAdj+numAdverbs}{numLexicals}$ 
-$POS_nounVar=\dfrac{numNouns+numProperNouns}{numLexicals}$ 
-$POS_verbVar1=\dfrac{numVerbsOnly}{len(uniqueVerbs)}$ 
-$POS_verbVar2=\dfrac{numVerbsOnly}{numLexicals}$ 
-$POS_squaredVerbVar1=\dfrac{numVerbsOnly\cdotnumVerbsOnly}{len(uniqueVerbs)}$ 
-$POS_correctedVV1=\dfrac{numVerbsOnly}{\sqrt(2.0\cdot len(uniqueVerbs))}$ 
+$POS_numNouns=\dfrac{numNouns+numProperNouns}{TotalWords}$\
+$POS_numProperNouns=\dfrac{numProperNouns}{TotalWords}$\
+$POS_numPronouns=\dfrac{numPronouns}{TotalWords}$  \
+$POS_numConjunct=\dfrac{numConjunct}{TotalWords}$\
+$POS_numAdjectives=\dfrac{numAdj}{TotalWords}$ \
+$POS_numVerbs=\dfrac{numVerbs}{TotalWords}$ \
+$POS_numAdverbs=\dfrac{numAdverbs}{TotalWords}$ \
+$POS_numPrepositions=\dfrac{numPrepositions}{TotalWords}$ \
+$POS_numInterjections=\dfrac{numInterjections}{TotalWords}$ \
+$POS_numPerPronouns=\dfrac{perpronouns}{TotalWords}$ \
+$POS_numLexicals=\dfrac{numLexicals}{TotalWords}$ \
+$POS_numFunctionWords=\dfrac{numFunctionWords}{TotalWords}$ \
+$POS_numDeterminers=\dfrac{numDeterminers}{TotalWords}$ \
+$POS_numVerbsVB=\dfrac{numVB}{TotalWords}$ \
+$POS_numVerbsVBN=\dfrac{numVBN}{TotalWords}$ \
+$POS_advVar=\dfrac{numAdverbs}{numLexicals}$ \
+$POS_adjVar=\dfrac{numAdj}{numLexicals}$ \
+$POS_modVar=\dfrac{numAdj+numAdverbs}{numLexicals}$ \
+$POS_nounVar=\dfrac{numNouns+numProperNouns}{numLexicals}$ \
+$POS_verbVar1=\dfrac{numVerbsOnly}{len(uniqueVerbs)}$ \
+$POS_verbVar2=\dfrac{numVerbsOnly}{numLexicals}$ \
+$POS_squaredVerbVar1=\dfrac{numVerbsOnly\cdotnumVerbsOnly}{len(uniqueVerbs)}$ \
+$POS_correctedVV1=\dfrac{numVerbsOnly}{\sqrt{2.0\cdotlen(uniqueVerbs)}}$ \
     
     
     
