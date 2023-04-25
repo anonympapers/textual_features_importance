@@ -1,0 +1,8 @@
+BilogTTR: 0.0
+CorrectedTTR: 0.0
+MTLD: 0.0005208196207477563
+RootTTR: 0.0
+TTR: 0.0
+embedding: 0.0002087136077676842
+linking_rate: 0.0
+synonyms_rate: 0.0
