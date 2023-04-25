@@ -145,9 +145,9 @@ See work of [@essay] for more details.
 
 Taking into account:
 
-$a=b+c$
-$ numLexicals = numAdj + numNouns + numVerbs + numAdverbs + numProperNouns$
-$ numVerbsOnly = numVerbs$
+
+$\text{numLexicals}=\text{numAdj}+\text{numNouns}+\text{numVerbs}+\text{numAdverbs}+\text{numProperNouns}$
+$numVerbsOnly=numVerbs$
 
 
 Density features are calculated as:
