@@ -128,27 +128,11 @@ if __name__ == "__main__":
 
 ## Section Feature extraction 
 
-In this section we will provide details on how textual features were extracted. Plase for more details check corresponding code in the directory __./preprocessing/__.
+In this section we will provide details on how textual features were extracted. Plase for more details check corresponding code in the directory __./preprocessing/__. For more information on diversity, density, reference, overlapping features please check \url{http://arxiv.org/abs/1612.00729}. For more information on fillers see \url{https://inria.hal.science/hal-02933476/document}.
 
 ### Lexical Diversity Features
 
-See work of [@essay] for more details.
 
-
-@article{essay,
-  author    = {Sowmya Vajjala},
-  title     = {Automated assessment of non-native learner essays: Investigating the
-               role of linguistic features},
-  journal   = {CoRR},
-  volume    = {abs/1612.00729},
-  year      = {2016},
-  url       = {http://arxiv.org/abs/1612.00729},
-  eprinttype = {arXiv},
-  eprint    = {1612.00729},
-  timestamp = {Mon, 13 Aug 2018 16:48:09 +0200},
-  biburl    = {https://dblp.org/rec/journals/corr/Vajjala16.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
-}
 
 $TTR = \dfrac{nb\_types}{nb\_tokens}$ \
 $CorrectedTTR = \dfrac{nb\_types}{\sqrt{2*nb\_tokens}}$\
@@ -158,7 +142,6 @@ MTLD measures the average length of continuous text sequence that maintains the 
   
 ### Density Features 
 
-See work of [@essay] for more details.
 
 Taking into account:
 
@@ -195,7 +178,7 @@ $POS_correctedVV1=\dfrac{numVerbsOnly}{\sqrt{2.0\times len(uniqueVerbs)}}$
     
     
 ### Reference Features
-See work of \cite{essay} for more details.
+
 
 $numPronouns=numPersonalPronouns+numPossessivePronouns$\
 $DISC_RefExprPronounsPerNoun=\dfrac{numPronouns}{numNouns}$ \
@@ -211,7 +194,7 @@ $DISC_RefExprProperNounsPerNoun=\dfrac{numProperNouns}{numNouns}$
 
 ### Overlap Features
 
-See work of [@essay] for more details.
+
 
 totalSentencesSize -- number of sentences within the transcript.
 
@@ -237,7 +220,7 @@ averageSynClassVERB average number of used synonyms within synonym classes for v
 
 ### Filler Features
 
-See work of \cite{fillers} for more details.
+
 
 
 f_uh number of fillers "uhh"
