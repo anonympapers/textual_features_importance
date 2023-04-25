@@ -24,7 +24,7 @@ This repository contains following:
         * __./labels/__ : directory with extracted separation on classes of low/high dimention
             * .csv files: contain 0/1 classes classification if given transcripts see Section Label Processing for more datails
             * .txt files: contain median of analysed dimention used for separation
-    *__./MT/__:
+     * __./MT/__:
         * extracted features: _~~filler.csv~~, text_linking_rate.csv, text_synonyms_rate.csv, text_diversity.csv, text_density.csv, text_discourse.csv, text_reference.csv, ~~acoustic.csv~~, ~~visual.csv~~_
         * __./labels/__ : directory with extracted separation on classes of low/high dimentions
             * .csv files: contain 0/1 classes classification if given transcripts see Section Label Processing for more datails
