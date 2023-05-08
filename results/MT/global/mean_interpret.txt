@@ -1,8 +1,4 @@
-BilogTTR: 0.0
-CorrectedTTR: 0.0
-MTLD: 0.0005208196207477563
-RootTTR: 0.0
-TTR: 0.0
-embedding: 0.0002087136077676842
-linking_rate: 0.0
-synonyms_rate: 0.0
+density: 0.00025812891841395377
+discourse: 0.00017214621567450804
+linking_rate: 0.012697149744349056
+synonyms_rate: 0.0003244999869056739
