@@ -1,1 +1,1 @@
-mean: 0.7163120567375887 confidence interval: (nan, nan)
+mean: 0.6923076923076924 confidence interval: (0.6923076923076924, 0.6923076923076924)

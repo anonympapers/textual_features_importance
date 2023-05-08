@@ -1,0 +1,29 @@
+threshold: 0.1 top features and correlation coefficients:
+ f_uh                         -0.180159
+f_um                         -0.195713
+f_mid                        -0.267128
+f_uncertain                  -0.137553
+conjunctToSent               -0.100158
+conjunctTypesToSent          -0.175508
+conjunctToWords              -0.163412
+conjunctNum                   0.234999
+conjunctTypesToTotal         -0.116442
+conjunctNeighborSent          0.201487
+negemo                        0.121376
+anger                         0.135106
+sad                           0.139252
+synonymToNouns               -0.153116
+synonymToVerbs               -0.270629
+averageSynClassNOUN           0.152887
+averageSynClassVERB           0.260655
+TTR                          -0.426694
+CorrectedTTR                 -0.415854
+RootTTR                      -0.415854
+BilogTTR                     -0.411507
+POS_numConjunct              -0.175781
+POS_squaredVerbVar1           0.225559
+POS_correctedVV1              0.283605
+globalArgumentOverlapCount    0.268393
+globalStemOverlapCount        0.273626
+globalContentWordOverlap      0.230479
+Name: label, dtype: float64
