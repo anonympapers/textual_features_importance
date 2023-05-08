@@ -220,13 +220,20 @@ averageSynClassVERB average number of used synonyms within synonym classes for v
 
 ### Filler Features
 
-
-
-
 f_uh number of fillers "uhh"
 f_um number of fillers "umm"
 f_start number of fillers at the start of the sentence
 f_mid number of fillers within the sentence
 f_uncertain number of fillers in sentences containing stutter
 f_sen average number of tokens within the sentences containing fillers
+
+### Polarity Features
+
+Those features were extracted using LIWC tool fron \url{https://www.liwc.app}.
+
+posemo: percentages of positive words
+negemo: percentages of negative words
+anx: percentages of anxious words
+anger: percentages of angry words
+sad:percentages of sad words
 
