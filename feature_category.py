@@ -73,11 +73,11 @@ text_linking_rate_category = {'linking_rate': ['conjunctToSent', 'conjunctTypesT
 text_synonyms_rate_category = {'synonyms_rate':['synonymToNouns', 'synonymToVerbs', 'averageSynClassNOUN', 'averageSynClassVERB']}
 
 text_embedding_category = {'embedding':['emb_axis_' + str(i) for i in range(100)]}
-text_div_category = {'density':['TTR', 'CorrectedTTR', 'RootTTR', 'BilogTTR', 'MTLD']}
+text_div_category = {'diversity':['TTR', 'CorrectedTTR', 'RootTTR', 'BilogTTR', 'MTLD']}
 text_dens_category = {'density': ['POS_numNouns', 'POS_numProperNouns', 'POS_numPronouns', 'POS_numConjunct', 'POS_numAdjectives', 'POS_numVerbs', 'POS_numAdverbs',  'POS_numModals', 'POS_numPrepositions',  'POS_numInterjections', 'POS_numPerPronouns', 'POS_numWhPronouns', 'POS_numLexicals', 'POS_numFunctionWords', 'POS_numDeterminers','POS_numVerbsVB', 'POS_numVerbsVBG', 'POS_numVerbsVBN', 'POS_numVerbsVBP', 'POS_numVerbsVBZ','POS_advVar', 'POS_adjVar', 'POS_modVar', 'POS_nounVar', 'POS_verbVar1', 'POS_verbVar2', 'POS_squaredVerbVar1','POS_correctedVV1']}
 text_disc_category = {'discourse':['localNounOverlapCount', 'localArgumentOverlapCount', 'localStemOverlapCount', 'localContentWordOverlap', 'globalNounOverlapCount', 'globalArgumentOverlapCount', 'globalStemOverlapCount', 'globalContentWordOverlap']}
 text_ref_category = {'reference': ['DISC_RefExprPronounsPerNoun', 'DISC_RefExprPronounsPerSen', 'DISC_RefExprPronounsPerWord','DISC_RefExprPerPronounsPerSen', 'DISC_RefExprPerProPerWord','DISC_RefExprPossProPerSen', 'DISC_RefExprPossProPerWord', 'DISC_RefExprDefArtPerSen','DISC_RefExprDefArtPerWord', 'DISC_RefExprProperNounsPerNoun']}
-text_polarity = {'polarity': ['posTerms', 'negTerms', 'neutralTerms']}
+text_polarity = {'polarity': ['posemo', 'negemo', 'anx', 'anger', 'sad']}
 
 
 # print(text_category)
