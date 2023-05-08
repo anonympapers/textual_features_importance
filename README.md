@@ -55,6 +55,20 @@ This repository contains following:
 
 ## Section Execution
 
+### Subsection: requirements & feature extraction
+
+
+___ATENTION: some code uses sys.path.append("path\_to\_directory") please make sure that you changed it to your path\_to\_directory in the files SHAP.py LabelProcessor\_MT.py TextProcessor\_MT.py___
+
+Make sure that in your preprocess/utils.py you have:
+
+```
+data = pd.read_csv('path_to_your_directory/data/POM/confidenceLabel.csv', index_col=0)
+    
+```
+This code is used only if you extract features from data sets from the scratch which is by the default not mandatory and not recommended as they are provided in this directory. 
+
+
 First install requirements via:
 ```
 pip install -r requirements.txt
@@ -80,16 +94,75 @@ python3 LabelProcesssor_MT.py
 ___ANALYSIS: ONCE LABELING & FEATURE EXTRACTION IS DONE YOU CAN EXECUTE ANALYSIS___
 
 
-To perform analysis you have to first chose wich feature categories to use. We already saved textual, filler and audio categories in file _categories.json_. To train classifier and analyse the performance you can execute following:
+### Subsection: correlation, classification and SHAP analysis
+
+
+
+To perform analysis you will have to run _test\_MT.py_ but before please make sure that you changed parameters in the code to what you are interested in: 
+
+
+```
+#______________________ test_MT.py _______________________
+
+# Changeable variables. Please specify data set name: MT or POM 
+
+global dataset
+dataset = 'MT'
+
+```
+
+By the default program will analyse _persuasiveness_, _confidense_ dimensions for 3T\_French data set and additionally _engagement_ and _global_ dimensions for POM data set. Make sure that you perform analysis you want by commenting some parts of the main() in _test\_MT.py_ (bolow we specified which parts COULD BE COMMENTED):
+
+
+```
+#______________________ test_MT.py _______________________
+
+if __name__ == "__main__":
+    dimentions = getDimentions(dataset)
+
+    for dim in dimentions:
+        print("------------------" + dim + "------------------")
+        rate_type = dim
+        setGlobal(dataset, dim)
+        X, group_by_category = loadFeturesByCategories()
+        Y = loadRatings()
+        X, Y, target, feature_name = dataPreprocessing(X, Y)
+        print("*********************** CalculCorr ***********************")
+        correlation(X, Y, group_by_category)
+        print("*********************** featureSelection ***********************")
+        X, Y, target, feature_name = featureSelection(X, Y, target)
+        if (len(X.columns) > 0):
+            print("*********************** Chose Best Parameters ***********************")
+            best_param, best_model = choseBestParametersForClassification(X, Y)
+            
+# If you are not interested in  LeaveOneOut evaluation please comment this part:
+            print("*********************** LeaveOneOut ***********************")
+            leaveOneOutTrain(X, Y, best_param, best_model)
+            
+# If you are not interested in checking the evaluation of performance of the Random classifier please comment this part:
+            print("*********************** Random ***********************")
+            randomClassifier(X, Y)
+            
+# If you are not interested in calculation of SHAP values please comment this part:
+            print("*********************** SHAP ***********************")
+            X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.2, random_state=42, stratify=Y)
+            best_model.fit(X_train, y_train.values.ravel())
+            shapAnalysis(best_model, X_train, X_test, target, group_by_category, feature_name)
+
+```
+
+
+
+We already saved textual, filler and audio categories in file _categories.json_. To train classifier and analyse the performance you can execute following:
 
 ```
 python3 test_MT.py
 ```
 
-If you want to change the set of used features go to the function _loadFeturesByCategories()_ and change construction of variable X. Following configurations could be used:
+If you want to change the set of used features go to the function _loadFeturesByCategories()_ and change construction of variable X. By the default program is concidering all linking_rate, synonym_rate, diversity, density, discourse, reference, polarity features for 3T\_French dataset and additionally to this list filler features for POM data set. To change that following configurations could be used:
 
 ```
-# Use linking_rate, diversity, density, discourse, reference features:
+# Use linking_rate, synonym_rate, diversity, density, discourse, reference, polarity features:
 
 X = text_linking_rate.join(text_synonym_rate, how = 'left').join(text_div, how = 'left').join(text_dens, how = 'left').join(text_disc, how = 'left').join(text_ref, how = 'left') 
 
@@ -99,31 +172,8 @@ X = text_linking_rate.join(text_synonym_rate, how = 'left').join(text_div, how =
 
 ```
 
-___NOTE: PLEASE NOTE THAT test_MT.py REQUIRES YOU TO CHANGE GLOBAL VARIABLE DATASET TO MT OR POM___
 
-
-Execution of __test_MT.py__ will create files in __./results/__ and __./demo/__ described before. To include/exclude shapley analysis please uncomment/comment the last line in the file __test_MT.py__:
-  
-```
-if __name__ == "__main__":
-    dimentions = getDimentions()
-
-
-    for dim in dimentions:
-        print("------------------" + dim + "------------------")
-        rate_type = dim
-        setGlobal(dataset, dim)
-        Y = loadRatings()
-        X, group_by_category = loadFeturesByCategories()
-        X, Y, target, feature_name = dataPreprocessing(X, Y)
-        best_param = choseBestParametersForClassification(X, Y)
-        print(best_param)
-        svm, X_train, X_test = averageF1Score(X, Y, best_param)
-        randomClassifier(X, Y)
-        # Uncomment the following line to add SHAP analysis:
-        # shapAnalysis(svm, X_train, X_test, target, group_by_category, feature_name)
-
-```
+Execution of __test_MT.py__ will create files in __./results/__ and __./demo/__ described before. 
 
 
 ## Section Feature extraction 
