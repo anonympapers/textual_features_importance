@@ -1,1 +1,0 @@
-best parameters: {'C': 1, 'gamma': 1, 'kernel': 'rbf', 'probability': True} best_train_score: 0.7030215827338131
