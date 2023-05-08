@@ -1,0 +1,5 @@
+density: 0.0
+diversity: 0.0
+linking_rate: 0.004392925622922582
+polarity: 0.0002812645819460587
+synonyms_rate: 2.405701531806367e-05
