@@ -35,7 +35,7 @@ nltk.download('omw-1.4')
 
 global dataset
 global language
-sys.path.append('/tsi/clusterhome/abarkar/REVITALISE')
+sys.path.append('your_path_to_directory')
 
 
 #---------------------------------------------------------------------
