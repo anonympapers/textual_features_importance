@@ -1,0 +1,15 @@
+threshold: 0.1 top features and correlation coefficients:
+ conjunctToSent          0.103630
+conjunctToWords         0.104974
+conjunctNum             0.180454
+conjunctNeighborSent   -0.136146
+anx                     0.112209
+anger                  -0.103504
+synonymToNouns         -0.115868
+synonymToVerbs         -0.178433
+averageSynClassNOUN     0.115868
+averageSynClassVERB     0.178433
+POS_numNouns           -0.147387
+POS_numConjunct         0.139000
+POS_nounVar            -0.140253
+Name: label, dtype: float64
