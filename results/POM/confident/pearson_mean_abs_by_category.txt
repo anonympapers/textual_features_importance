@@ -1,0 +1,24 @@
+mean absolute correlation by groups 
+:                   label
+group                  
+density        0.106351
+discourse      0.146280
+diversity      0.350049
+fluency        0.191532
+linking_rate   0.164140
+polarity       0.112285
+reference      0.060252
+synonyms_rate  0.209090 
+ with correlation coefficients:
+ f_uh                             -0.258785
+f_um                             -0.215700
+f_start                          -0.130163
+f_mid                            -0.329361
+f_uncertain                      -0.192792
+                                    ...   
+DISC_RefExprPossProPerSen         0.054871
+DISC_RefExprPossProPerWord        0.105569
+DISC_RefExprDefArtPerSen          0.018067
+DISC_RefExprDefArtPerWord        -0.028552
+DISC_RefExprProperNounsPerNoun   -0.054807
+Name: label, Length: 72, dtype: float64
