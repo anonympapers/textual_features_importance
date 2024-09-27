@@ -291,15 +291,15 @@ sad:percentages of sad words
 
 ### "Language Level"
 
-#### Lexical Diversity
+## Lexical Diversity
 
-| **Feature**       | **Formula**                                               | **Description**                                                                                               |
-|-------------------|-----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Traditional TTR   | $\dfrac{\text{Types}}{\text{Tokens}}$                  | Measures the ratio of unique words (types) to the total number of words (tokens), indicating lexical variety.   |
-| Corrected TTR     | \( \dfrac{\text{Types}}{\sqrt{2 \times \text{Tokens}}} \) | Adjusts TTR for text length, providing a more stable estimate of lexical diversity.                            |
-| Root TTR          | \( \dfrac{\text{Types}}{\sqrt{\text{Tokens}}} \)          | Another length-corrected measure of lexical diversity, less sensitive to text length than traditional TTR.      |
-| Bilog TTR         | \( \dfrac{\log(\text{Types})}{\log(\text{Tokens})} \)     | Logarithmic transformation of TTR, providing a normalized measure of lexical richness.                         |
-| MTLD              | \( \mu(\text{TTR}(\text{text}) > 0.72) \)                 | Calculates the average sequence length where TTR remains above 0.72, a threshold indicating sustained lexical diversity. |
+| **Feature**       | **Formula**                                          | **Description**                                                                                                                                               |
+|-------------------|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Traditional TTR (TTR) | $$\dfrac{\text{Types}}{\text{Tokens}}$$             | Measures the ratio of unique words (types) to the total number of words (tokens), indicating lexical variety.                                                   |
+| Corrected TTR     | $$\dfrac{\text{Types}}{\sqrt{2 \times \text{Tokens}}}$$ | Adjusts TTR for text length, providing a more stable estimate of lexical diversity.                                                                             |
+| Root TTR          | $$\dfrac{\text{Types}}{\sqrt{\text{Tokens}}}$$          | Another length-corrected measure of lexical diversity, less sensitive to text length than traditional TTR.                                                      |
+| Bilog TTR         | $$\dfrac{\log(\text{Types})}{\log(\text{Tokens})}$$     | Logarithmic transformation of TTR, providing a normalized measure of lexical richness.                                                                         |
+| MTLD              | $$\mu(\text{TTR}(\text{text}) > 0.72)$$                | Calculates the average sequence length where TTR remains above 0.72, a threshold indicating sustained lexical diversity.                                        |
 
 #### POStag Density
 
