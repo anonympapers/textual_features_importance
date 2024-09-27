@@ -287,3 +287,68 @@ anx: percentages of anxious words
 anger: percentages of angry words
 sad:percentages of sad words
 
+## Lexical Features Overview
+
+### "Language Level"
+
+#### Lexical Diversity
+
+| **Feature**       | **Formula**                                 | **Description**                                                                                  |
+|-------------------|---------------------------------------------|--------------------------------------------------------------------------------------------------|
+| Traditional TTR   | \( \frac{\text{Types}}{\text{Tokens}} \)    | Measures the ratio of unique words (types) to the total number of words (tokens), indicating lexical variety. |
+| Corrected TTR     | \( \frac{\text{Types}}{\sqrt{2 \times \text{Tokens}}} \) | Adjusts TTR for text length, providing a more stable estimate of lexical diversity.              |
+| Root TTR          | \( \frac{\text{Types}}{\sqrt{\text{Tokens}}} \) | Another length-corrected measure of lexical diversity, less sensitive to text length than traditional TTR. |
+| Bilog TTR         | \( \frac{\log(\text{Types})}{\log(\text{Tokens})} \) | Logarithmic transformation of TTR, providing a normalized measure of lexical richness.          |
+| MTLD              | \( \mu(\text{TTR}(\text{text}) > 0.72) \)   | Calculates the average sequence length where TTR remains above 0.72, a threshold indicating sustained lexical diversity. |
+
+
+#### POStag Density
+
+| **Notation**       | **Formula**                                                        | **Description**                                                                                  |
+|--------------------|--------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| NounDens           | \( \frac{\text{numNouns} + \text{numProperNouns}}{\text{TotalWords}} \) | Ratio of nouns and proper nouns to total words, indicating the noun density of the text.         |
+| ProNounDens        | \( \frac{\text{numProperNouns}}{\text{TotalWords}} \)              | Proportion of proper nouns in the text, reflecting the usage of specific entities or names.       |
+| PronDens           | \( \frac{\text{numPronouns}}{\text{TotalWords}} \)                 | Measures the frequency of pronouns, suggesting narrative perspective or anonymity.                |
+| ConjDens           | \( \frac{\text{numConjunct}}{\text{TotalWords}} \)                 | Proportion of conjunctions, indicating the complexity or compound structure of sentences.         |
+| AdjDens            | \( \frac{\text{numAdj}}{\text{TotalWords}} \)                      | Ratio of adjectives, reflecting descriptive intensity or detail in the text.                      |
+| VerbDens           | \( \frac{\text{numVerbs}}{\text{TotalWords}} \)                    | Proportion of verbs, indicating action or dynamic content in the text.                            |
+
+#### Overlapping
+
+| **Notation**       | **Description**                                                                                     |
+|--------------------|-----------------------------------------------------------------------------------------------------|
+| TotalSentSize      | Total number of sentences in the transcript, indicating overall length and complexity.              |
+| LocNounOverlap     | Measures the occurrence of the same noun in two consecutive sentences, indicating noun repetition.   |
+| LocStemOverlap     | Counts occurrences of the same nouns or pronouns with the same lemma in two consecutive sentences.   |
+| LocArgOverlap      | Measures the repetition of nouns or pronouns across two consecutive sentences, indicating argument continuity. |
+
+
+#### Referential
+
+| **Notation**       | **Formula**                                          | **Description**                                                                          |
+|--------------------|------------------------------------------------------|------------------------------------------------------------------------------------------|
+| PronPerNoun        | \( \frac{\text{numPronouns}}{\text{numNouns}} \)     | Ratio of total pronouns to nouns, indicating dependency of pronoun usage on nouns.        |
+| PronPerSent        | \( \frac{\text{numPronouns}}{\text{numSentences}} \) | Average number of pronouns used per sentence, suggesting narrative focus.                 |
+
+#### SD LIWC
+
+| **Feature**        | **Description**                                                                                     |
+|--------------------|-----------------------------------------------------------------------------------------------------|
+| WordPerSent        | Average number of words per sentence, providing a measure of sentence length and complexity.         |
+| WordCount          | Total count of words in the text, indicating overall text length.                                    |
+| BigWords           | Number of words longer than six letters, reflecting the presence of longer and potentially complex words. |
+
+#### Synonyms
+
+| **Notation**             | **Formula**                                                  | **Description**                                                                                    |
+|--------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| SynNounsRatio            | \( \frac{\text{nbOfGroupsOfNounSynonyms}}{\text{nbOfNouns}} \) | Measures the proportion of noun synonym groups relative to the total number of nouns.             |
+| AverSynPerNounClass      | \( \text{AVER}(\text{SynClassNOUNSize}) \)                   | Average number of synonyms within each noun synonym class, reflecting variability of noun usage.   |
+
+#### Affective Cognitive and Perceptive Processes
+
+| **Feature**         | **Description**                                                                                     |
+|---------------------|-----------------------------------------------------------------------------------------------------|
+| PosEmo              | Percentage of words that convey positive emotions, indicating positive sentiment.                    |
+| NegEmo              | Percentage of words that convey negative emotions, indicating negative sentiment.                    |
+| Anx                 | Percentage of words that express anxiety, revealing emotional stress or tension.                     |
