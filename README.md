@@ -326,4 +326,21 @@ In this section we will provide details on how textual features were extracted. 
 | **f_uncertain**   | Number of fillers in sentences containing stutter.                                                         |
 | **f_sen**         | Average number of tokens within the sentences containing fillers.                                          |
 
+## Grid Search Parameters for Regression Models
+
+| **Model**       | **Grid Search Parameters**                                                                 |
+|-----------------|---------------------------------------------------------------------------------------------|
+| **Linear**      | None                                                                                        |
+| **Ridge**       | alpha: 0.1, 1.0, 10.0                                                                       |
+| **Lasso**       | alpha: 0.1, 1.0, 10.0                                                                       |
+| **Random Forest**| n_estimators: 100, 200, 300 <br> max_depth: None, 10, 20 <br> min_samples_split: 2, 5, 10 <br> min_samples_leaf: 1, 2, 4 |
+| **ElasticNet**  | alpha: 0.1, 1.0, 10.0 <br> l1_ratio: 0.1, 0.5, 0.9                                          |
+
+## Parameters for Neural-based Models
+
+| **Model**                           | **Parameters**                                                                 |
+|-------------------------------------|--------------------------------------------------------------------------------|
+| **Multi-Layer Perceptron (MLP)**     | hidden_layer_sizes: 100 <br> max_iter: 500 <br> random_state: 42               |
+| **CamemBERT**                       | max_len: 128 <br> dropout: 0.3 <br> optimizer: AdamW, lr: 2 × 10^-5 <br> loss_function: MSELoss <br> epochs: 15 <br> batch_size: 16 |
+
 
